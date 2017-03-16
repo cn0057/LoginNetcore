@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "登陆页面";
+    Layout = null;
+}
+<div>
+    <form name="form1" method="post" action="">
+        <div>
+            <label>姓名</label>
+            <input type="text" id="name" name="name" />
+            <label>密码</label>
+            <input type="text" id="pwd" name="pwd" />
+            <input type="submit" value="登陆" />
+        </div>
+    </form>
+</div>
+<div>
+    <input type="button" onclick="load()" value="注册账户" />
+    @*<a href="/Register/Index">注册账户</a>*@
+</div>
+<script>
+    function load() {
+        form1.action = "/Register/Index";
+        form1.submit();
+
+    }
+</script>
