@@ -15,7 +15,7 @@ namespace LoginNetcore.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "no about";
 
             return View();
         }
